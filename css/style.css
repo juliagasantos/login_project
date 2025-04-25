@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 :root {
   --clr-white: #ffffff;
+  --clr-black: #000000;
 }
 
 
@@ -28,8 +31,48 @@ body {
     padding: 2em;
     background: var(--clr-white);
     gap: 2em;
-    .name{}
-    .email{}
-    .password{}
+    border-radius: 1em;
+    width: 50%;
+align-items: center;
+    & h1 {
+      color: var(--clr-black);
+    }
+
+    .name {
+      display: flex;
+      flex-direction: column;
+      & input {
+        
+        border-radius: 1em;
+        padding: 0.5em;
+        border: 1px solid var(--clr-black);
+      }
+    }
+
+    .email {
+      & input {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1em;
+        padding: 0.5em;
+        border: 1px solid var(--clr-black);
+      }
+    }
+
+    .password {
+      & input {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1em;
+        padding: 0.5em;
+        border: 1px solid var(--clr-black);
+      }
+    }
+
+    .btn {
+      border: 1px solid var(--clr-black);
+      border-radius: 1em;
+      padding: 0.5em;
+    }
   }
 }
