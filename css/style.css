@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+  --clr-white: #ffffff;
+}
+
+
+body {
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#login {
+  height: 100vh;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background: var(--clr-white);
+    gap: 2em;
+    .name{}
+    .email{}
+    .password{}
+  }
+}
