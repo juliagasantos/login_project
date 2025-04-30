@@ -10,69 +10,78 @@
 :root {
   --clr-white: #ffffff;
   --clr-black: #000000;
+  --clr-transparent: transparent;
 }
 
 
 body {
   font-size: 1rem;
   font-family: 'Quicksand', sans-serif;
+  background-image: url('../img/bgLogin.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #login {
   height: 100vh;
-  background: linear-gradient(to right, #a18cd1, #fbc2eb);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 
   .login-container {
     display: flex;
     flex-direction: column;
-    padding: 2em;
-    background: var(--clr-white);
-    gap: 2em;
+    gap: 1em;
     border-radius: 1em;
-    width: 50%;
-align-items: center;
+    width: 45%;
+    align-items: center;
+
     & h1 {
-      color: var(--clr-black);
+      color: var(--clr-white);
     }
 
     .name {
       display: flex;
       flex-direction: column;
+      
       & input {
-        
-        border-radius: 1em;
+        background: var(--clr-transparent);
+        border-radius: 0.8em;
         padding: 0.5em;
-        border: 1px solid var(--clr-black);
+        border: 1px solid var(--clr-white);
       }
     }
 
     .email {
+      display: flex;
+      flex-direction: column;
       & input {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1em;
+        border-radius: 0.8em;
         padding: 0.5em;
-        border: 1px solid var(--clr-black);
+        border: 1px solid var(--clr-white);
+        background: var(--clr-transparent);
       }
     }
 
     .password {
+      display: flex;
+      flex-direction: column;
       & input {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1em;
+        border-radius: 0.8em;
         padding: 0.5em;
-        border: 1px solid var(--clr-black);
+        border: 1px solid var(--clr-white);
+        background: var(--clr-transparent);
       }
     }
 
     .btn {
-      border: 1px solid var(--clr-black);
+      border: 1px solid var(--clr-white);
       border-radius: 1em;
       padding: 0.5em;
+
+      & a {
+        color: var(--clr-white);
+      }
     }
   }
 }
